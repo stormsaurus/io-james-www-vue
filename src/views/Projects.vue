@@ -16,7 +16,7 @@
                             <div class="grey--text">{{p.summary}}</div>
                         </v-card-title>
                         <v-card-title @click="p.show = !p.show" class="pt-0">
-                            <span v-for="d in p.domain" :key="p.id+'-'+d"><v-chip small outline><span v-html="d"></span></v-chip></span>
+                            <span v-for="d in p.domain" :key="p.id+'-'+d"><v-chip small outline disabled><span v-html="d"></span></v-chip></span>
                         </v-card-title>
                         <v-slide-y-transition>
                             <v-card-text v-show="p.show" @click="p.show = !p.show">
@@ -37,6 +37,55 @@
                                 <v-icon>{{ p.show ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</v-icon>
                             </v-btn>
                         </v-card-actions>
+                    </v-card>
+                </v-flex>
+            </v-layout>
+            <v-layout row wrap>
+                <v-flex (xs12|sm6|md4|lg3|xl2)>
+                    <v-card @click="misc.show = !misc.show" class="clickableCard">
+                        <v-card-media>
+                            <v-carousel v-bind:hide-controls="misc.images.length<2 ? true:false" v-bind:hide-delimiters="misc.images.length<2 ? true:false">
+                                <v-carousel-item v-for="(image, index) in misc.images" v-bind:src="image" :key="misc.id"></v-carousel-item>
+                            </v-carousel>
+                        </v-card-media>
+                        <v-card-title @click="misc.show = !misc.show" class="pb-0">
+                            <div class="headline">{{misc.title}}</div>
+                        </v-card-title>
+                        <v-card-title @click="misc.show = !misc.show" class="pt-0 pb-0">
+                            <div class="grey--text">{{misc.summary}}</div>
+                        </v-card-title>
+                        <v-card-title @click="misc.show = !misc.show" class="pt-0">
+                            <span v-for="d in misc.domain" :key="misc.id+'-'+d"><v-chip small outline disabled><span v-html="d"></span></v-chip></span>
+                        </v-card-title>
+                        <v-slide-y-transition>
+                            <v-card-text v-show="misc.show" @click="misc.show = !misc.show">
+                                <div v-html="misc.description"></div>
+                                <span v-for="item in misc.items">
+                                    <p>
+                                        <v-btn small outline color="primary" v-bind:href="item.git">
+                                            <v-icon>code</v-icon>
+                                        </v-btn>
+                                        <span>{{item.description}}</span>
+                                    </p>
+                                </span>
+                            </v-card-text>
+                        </v-slide-y-transition>
+                        <v-card-actions>
+<!--
+                            <v-btn small outline color="primary" v-if="p.git.length>0" v-bind:href="p.git">
+                                <v-icon>code</v-icon>
+                            </v-btn>
+                            <v-btn small outline color="primary" v-if="p.download.name && p.download.href" v-bind:href="p.download.href">
+                                <v-icon>file_download</v-icon>
+                                {{p.download.name}}
+                            </v-btn>
+                        -->
+                            <v-spacer></v-spacer>
+                            <v-btn icon flat @click="misc.show = !misc.show">
+                                <v-icon>{{ misc.show ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</v-icon>
+                            </v-btn>
+                        </v-card-actions>
+
                     </v-card>
                 </v-flex>
             </v-layout>
@@ -80,7 +129,7 @@ export default {
                     tools: 'typescript, angular, ionic',
                     description: '<p>This web site you are at.  Its relatively simplicity makes it a good candidate to periodically rewrite/update using newer technologies in part for learning.  It has been through phases of existance as custom javascript, yui, jquery, angular, ionic, and now vue.</p><p>It exercises several components of the vue framework such as carousel, grids/flex layout, and an assortment of basics like chips, cards, etc.</p>',
                     codeExample:'',
-                    git:'https://github.com/stormsaurus/io-james-www',
+                    git:'https://github.com/stormsaurus/io-james-www-vue',
                     download:{},
                     show: false
                 },
@@ -189,21 +238,35 @@ export default {
                     git:'',
                     download:{},
                     show: false
-                },
-                {id: 'jamesio-util',
-                    title: 'util.james.io',
-                    images: [''],
-                    summary:'Collection of utilities.',
-                    domain: ['libraries'],
-                    tools: 'java, mail api, syndication api,',
-                    description: `<p>A couple random utilities mostly used by old versions of this website.</p><p>Mailer - A simple mailer that allows web forms on a website to send emails through a server.  It throttles total traffic by hour and day.</p><p>Klepto - A syndication feed reader that makes the feed available to javascript from a server.  Was used in a previous life to create a news feed reader.</p>`,
-                    codeExample:'',
-                    git:'git',
-                    download:{},
-                    show: false
                 }
+            ],
+        misc:
+            {id: 'misc-util',
+                title: 'Miscellaneous',
+                images: [''],
+                summary:'Collection of miscellaneous utilities.',
+                domain: ['libraries', 'utilities'],
+                description: ``,
+                items: [
+                    {
+                        name: 'wg-encrypt',
+                        description: 'Batch files to recursively gpg encrypt/decrypt files.',
+                        git: 'https://github.com/eiseins/wg-encrypt'
+                    },
+                    {
+                        name: 'Mailer',
+                        description: 'A simple mailer that allows web forms on a website to send emails through a server.  It throttles total traffic by hour and day.',
+                        git: ''
+                    },
+                    {
+                        name: 'Klepto',
+                        description: 'A syndication feed reader that makes the feed available to javascript from a server.  Was used in a previous life to create a news feed reader.',
+                        git: ''
+                    }
+                ],
+                show: true
+            }
 
-            ]
 
     }),
     props: {
