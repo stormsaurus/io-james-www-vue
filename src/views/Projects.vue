@@ -243,9 +243,9 @@ export default {
         misc:
             {id: 'misc-util',
                 title: 'Miscellaneous',
-                images: [''],
+                images: ['img/utilities/wg-encrypt-screenshot-300px.jpg'],
                 summary:'Collection of miscellaneous utilities.',
-                domain: ['libraries', 'utilities'],
+                domain: ['libraries', 'utilities', 'open source'],
                 description: ``,
                 items: [
                     {
