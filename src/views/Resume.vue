@@ -21,7 +21,13 @@
                             <v-btn slot="activator" href="https://github.com/stormsaurus/" fab dark small color="primary">
                                 <v-icon dark>code</v-icon>
                             </v-btn>
-                            <span>Github</span>
+                            <span>Github (Private)</span>
+                        </v-tooltip>
+                        <v-tooltip bottom>
+                            <v-btn slot="activator" href="https://github.com/eiseins/" fab dark small color="primary">
+                                <v-icon dark>code</v-icon>
+                            </v-btn>
+                            <span>Github (Public)</span>
                         </v-tooltip>
                         <v-tooltip bottom>
                             <v-btn slot="activator" href="https://www.linkedin.com/in/jteer" fab dark small color="primary">

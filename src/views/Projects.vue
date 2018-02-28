@@ -245,7 +245,7 @@ export default {
                 title: 'Miscellaneous',
                 images: ['img/utilities/wg-encrypt-screenshot-300px.jpg'],
                 summary:'Collection of miscellaneous utilities.',
-                domain: ['libraries', 'utilities', 'open source'],
+                domain: ['libraries', 'utilities'],
                 description: ``,
                 items: [
                     {
@@ -256,12 +256,12 @@ export default {
                     {
                         name: 'Mailer',
                         description: 'A simple mailer that allows web forms on a website to send emails through a server.  It throttles total traffic by hour and day.',
-                        git: ''
+                        git: 'https://github.com/stormsaurus/form-mailer'
                     },
                     {
                         name: 'Klepto',
                         description: 'A syndication feed reader that makes the feed available to javascript from a server.  Was used in a previous life to create a news feed reader.',
-                        git: ''
+                        git: 'https://github.com/stormsaurus/klepto'
                     }
                 ],
                 show: true
