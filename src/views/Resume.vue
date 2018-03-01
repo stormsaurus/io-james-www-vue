@@ -4,7 +4,7 @@
             <v-icon>print</v-icon>
         </v-btn>
         <v-container grid-list-md>
-            <v-layout row wrap class="mb-2 pt-1" elevation-3>
+            <v-layout row wrap class="mb-1 pt-1" elevation-3>
                 <v-flex xs12 text-xs-center>
                     <div>James Teer<br />
         			Santa Clara, CA<br />
@@ -38,9 +38,7 @@
                     </div>
                 </v-flex>
             </v-layout>
-            <v-layout row wrap class="mb-2" elevation-3>
-            </v-layout>
-            <v-layout row wrap class="mb-2 pl-2 pt-1" elevation-3>
+            <v-layout row wrap class="mb-1 pl-2 pt-1" elevation-3>
                 <v-flex xs12>
     				<h3>Innovation</h3>
                     <p>Have founded/co-founded a couple startups.  Experienced in wearing many hats including conception, hiring, and execution.</p>
@@ -50,12 +48,12 @@
     				<p margin-left>A broad understanding of the space and the technology tradeoffs between time to maturity, emergent technology, and when the window of opportunity is.</p>
                 </v-flex>
             </v-layout>
-            <v-layout row wrap class="mb-2 pl-2 pt-1" elevation-3>
+            <v-layout row wrap class="mb-1 pl-2 pt-1" elevation-3>
                 <v-flex xs12>
                     <h3>Technical</h3>
                     <p>I started in science and then became fascinated with computer technologies.  Most of my technical computer experience is full stack with a heavy amount of java and javascript.  Various endevours have added experience in machine learning, medical devices/diagnostics, shipping management, geospatial analysis, electromechanical simulations, audio and video streaming, and writing world class APIs.</p><p>Currently I am looking into new languages again like go, exploring improvements in javascript typescript and es6, and digging deeper into machine learning.</p>
-                    <v-layout row wrap class="mb-2 pl-3">
-                        <v-flex xs12><v-divider></v-divider></v-flex>
+                    <v-layout row wrap class="mb-0 pl-3 print-together">
+                        <v-flex class="noprint" xs12><v-divider></v-divider></v-flex>
                         <v-flex xs6>
                             <h4>Recent</h4>
                         </v-flex>
@@ -66,8 +64,8 @@
                             <p>go, vue, veutify</p>
                         </v-flex>
                     </v-layout>
-                    <v-layout row wrap class="mb-2 pl-3">
-                        <v-flex xs12><v-divider></v-divider></v-flex>
+                    <v-layout row wrap class="mb-0 pl-3 print-together">
+                        <v-flex class="noprint" xs12><v-divider></v-divider></v-flex>
                         <v-flex xs6>
                             <h4>Machine Learning</h4>
                         </v-flex>
@@ -78,8 +76,8 @@
                             <p>supervised learning classification, cloudcompare, fast marching, random forest, fiji, imagej, java, kd trees, linear regression, logistic regression, mathematica (limited), numpy, octave (limited), python, scipy, sparkml (limited), weka</p>
                         </v-flex>
                     </v-layout>
-                    <v-layout row wrap class="mb-2 pl-3">
-                        <v-flex xs12><v-divider></v-divider></v-flex>
+                    <v-layout row wrap class="mb-0 pl-3 print-together">
+                        <v-flex class="noprint" xs12><v-divider></v-divider></v-flex>
                         <v-flex xs6>
                             <h4>Web</h4>
                         </v-flex>
@@ -90,8 +88,8 @@
                             <p>angular, bootstrap, css, es6, html, html5, ionic, javascript, java, jasmine, karma, modernizr, momentjs, npm, rxjs, typescript, threejs, underscore, and others</p>
                         </v-flex>
                     </v-layout>
-                    <v-layout row wrap class="mb-2 pl-3">
-                        <v-flex xs12><v-divider></v-divider></v-flex>
+                    <v-layout row wrap class="mb-0 pl-3 print-together">
+                        <v-flex class="noprint" xs12><v-divider></v-divider></v-flex>
                         <v-flex xs6>
                             <h4>Mobile</h4>
                         </v-flex>
@@ -102,8 +100,8 @@
                             <p>hybrid apps using cordova, html/html5, ionic, typescript</p>
                         </v-flex>
                     </v-layout>
-                    <v-layout row wrap class="mb-2 pl-3">
-                        <v-flex xs12><v-divider></v-divider></v-flex>
+                    <v-layout row wrap class="mb-0 pl-3 print-together">
+                        <v-flex class="noprint" xs12><v-divider></v-divider></v-flex>
                         <v-flex xs6>
                             <h4>Geospatial</h4>
                         </v-flex>
@@ -114,15 +112,15 @@
                             <p>arcgis, cesiumjs, fugroviewer, geotools, grass, html5, java, javascript, lastools, leaflet, mapbox, openstreetmap, qgis, slippy, turf</p>
                         </v-flex>
                     </v-layout>
-                    <v-layout row wrap class="mb-2 pl-3">
-                        <v-flex xs12><v-divider></v-divider></v-flex>
+                    <v-layout row wrap class="mb-0 pl-3 print-together">
+                        <v-flex class="noprint" xs12><v-divider></v-divider></v-flex>
                         <v-flex xs12><h4>General Tools</h4></v-flex>
                         <v-flex xs12>
                             <p>atom, aws including ec2, rds, s3, iam, jenkins, git, gitkraken, mysql, npm, postgresql, travis-ci</p>
                         </v-flex>
                     </v-layout>
-                    <v-layout row wrap class="mb-2 pl-3">
-                        <v-flex xs12><v-divider></v-divider></v-flex>
+                    <v-layout row wrap class="mb-0 pl-3 print-together">
+                        <v-flex class="noprint" xs12><v-divider></v-divider></v-flex>
                         <v-flex xs12><h4>Dusty</h4></v-flex>
                         <v-flex xs12>
                             <p>Languages - c/c++, bash, fortran, javafx, lua, perl, php, tcl/tk</p><p>Tools - apache httpd, ant, audio/visual hardware encoders, bower, docker, eclipse as a platform, hibernate, iptables/ipchains, jetty, jnlp, jwplayer, kubernetes, maven, mercurial, mod_rewrite, mod_proxy, mod_ssl, nginx, spring, svn, tomcat, virtual hosting, weblogic </p><p>Other - D3, backbone, jquery, jquery ui, qunit, geronimo, pubsubjs, jpa via openjpa, openjpa, rmtp, smil, junit, testng, jabsorb, video/audio transcoding</p>
@@ -130,11 +128,11 @@
                     </v-layout>
                 </v-flex>
             </v-layout>
-            <v-layout row wrap class="mb-2 pl-2 pt-1" elevation-3>
+            <v-layout row wrap class="mb-1 pl-2 pt-1" elevation-3>
                 <v-flex xs12>
     				<h3>Experience</h3>
-                    <p>This is a selected and incomplete history of prior work in order to cut down on the length of this resume.</p>
-                    <v-layout row wrap class="mb-2 pl-3">
+                    <p>This is a selected and incomplete history of prior work to cut down on resume length.  Additional details and projects can be found at <a href="/#/projects">http://james.io/#/projects</a> and <a href="https://www.linkedin.com/in/jteer">https://www.linkedin.com/in/jteer</a> .</p>
+                    <v-layout row wrap class="mb-1 pl-3">
                         <v-flex xs12 mb-0 pb-0>
                             <h4>Machine Learning Engineer</h4>
                             <div class="mb-1">Sungevity, Inc. &nbsp;&nbsp;&nbsp; Jun 2014 – Jun 2016</div>
@@ -229,7 +227,7 @@
                 </v-flex>
             </v-layout>
 
-            <v-layout row wrap class="print-together mb-2 pl-2 pt-1" elevation-3>
+            <v-layout row wrap class="print-together mb-1 pl-2 pt-1" elevation-3>
                 <v-flex xs12>
                     <h3>Education</h3>
                     <v-list three-line class="restoregrey">
@@ -258,35 +256,18 @@
                 </v-flex>
             </v-layout>
 
-            <v-layout row wrap class="mb-2 pl-2 pt-1" elevation-3>
+            <v-layout row wrap class="mb-0 pl-2 pt-1" elevation-3>
                 <v-flex xs12>
                     <h3>Publications</h3>
                     <p>Purely scientific <a href="/#/publications">publications</a> can be found in the following journals.</p>
-                    <v-list class="restoregrey">
-                        <v-list-tile class="restoregrey">
-                            <v-list-tile-content class="restoregrey">
-                                <div>Physical Review E</div>
-                            </v-list-tile-content>
-                        </v-list-tile>
-                        <v-list-tile>
-                            <v-list-tile-content>
-                                <div>Colloids and Surfaces A</div>
-                            </v-list-tile-content>
-                        </v-list-tile>
-                        <v-list-tile>
-                            <v-list-tile-content>
-                                <div>Journal of Chemical Physics</div>
-                            </v-list-tile-content>
-                        </v-list-tile>
-                        <v-list-tile>
-                            <v-list-tile-content>
-                                <div>Journal of Physical Chemistry</div>
-                            </v-list-tile-content>
-                        </v-list-tile>
-                    </v-list>
+                    <ul class="restoregrey ml-4">
+                        <div>Physical Review E</div>
+                        <div>Colloids and Surfaces A</div>
+                        <div>Journal of Physical Chemistry</div>
+                        <div>Journal of Chemical Physics</div>
+                    </ul>
                 </v-flex>
             </v-layout>
-
         </v-container>
     </div>
 </template>
@@ -306,8 +287,8 @@ export default {
 </script>
 
 <style scoped>
-.restoregrey { background-color: #313131 !important; }
-h3 { margin-bottom: 1em; }
-h4 { display:inline; }
-p { margin-left: 1.5em; }
+    .restoregrey { background-color: #313131 !important; }
+    h3 { margin-bottom: 1em; }
+    h4 { display:inline; }
+    p { margin-left: 1.5em; }
 </style>

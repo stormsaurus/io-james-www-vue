@@ -1,10 +1,13 @@
 <template>
     <div class="projects">
+        <v-btn class="print-no blue darken-3" fab absolute right @click="print()">
+            <v-icon>print</v-icon>
+        </v-btn>
         <v-container fluid grid-list-xl>
-            <v-layout row wrap>
+            <v-layout row wrap class="print-break-after print-together">
                 <v-flex (xs12|sm6|md4|lg3|xl2) v-for="p in projects" :key="p.id">
                     <v-card @click="p.show = !p.show" class="clickableCard">
-                        <v-card-media>
+                        <v-card-media class="print-together">
                             <v-carousel v-bind:hide-controls="p.images.length<2 ? true:false" v-bind:hide-delimiters="p.images.length<2 ? true:false">
                                 <v-carousel-item v-for="(image, index) in p.images" v-bind:src="image" :key="p.id+'-'+index"></v-carousel-item>
                             </v-carousel>
@@ -25,15 +28,17 @@
                             </v-card-text>
                         </v-slide-y-transition>
                         <v-card-actions>
-                            <v-btn small outline color="primary" v-if="p.git.length>0" v-bind:href="p.git">
+                            <v-btn small outline color="primary" class="print-no" v-if="p.git.length>0" v-bind:href="p.git">
                                 <v-icon>code</v-icon>
                             </v-btn>
-                            <v-btn small outline color="primary" v-if="p.download.name && p.download.href" v-bind:href="p.download.href">
+                            <span class="screen-no">{{p.git}}</span>
+                            <v-btn small outline color="primary" class="print-no" v-if="p.download.name && p.download.href" v-bind:href="p.download.href">
                                 <v-icon>file_download</v-icon>
-                                {{p.download.name}}
+                                http://james.io/{{p.download.name}}
                             </v-btn>
+                            <span class="screen-no">{{p.download.href}}</span>
                             <v-spacer></v-spacer>
-                            <v-btn icon flat @click="p.show = !p.show">
+                            <v-btn icon flat class="print-no" @click="p.show = !p.show">
                                 <v-icon>{{ p.show ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</v-icon>
                             </v-btn>
                         </v-card-actions>
@@ -62,9 +67,10 @@
                                 <div v-html="misc.description"></div>
                                 <span v-for="item in misc.items">
                                     <p>
-                                        <v-btn small outline color="primary" v-bind:href="item.git">
+                                        <v-btn small outline color="primary" class="print-no" v-bind:href="item.git">
                                             <v-icon>code</v-icon>
                                         </v-btn>
+                                        <span class="screen-no">{{item.git}}<br /></span>
                                         <span>{{item.description}}</span>
                                     </p>
                                 </span>
@@ -81,7 +87,7 @@
                             </v-btn>
                         -->
                             <v-spacer></v-spacer>
-                            <v-btn icon flat @click="misc.show = !misc.show">
+                            <v-btn icon flat class="print-no" @click="misc.show = !misc.show">
                                 <v-icon>{{ misc.show ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</v-icon>
                             </v-btn>
                         </v-card-actions>
@@ -115,7 +121,7 @@ export default {
                     summary:'Machine learning to support solar systems at city scale.',
                     domain: ['machine learning', 'terabyte datasets', 'geospatial', 'lidar', 'image analysis', '3d modeling'],
                     tools: 'sparkml, fiji, imagej, weka, scipy, numpy, threejs, cloudcompare, fugroviewer, lastools, arcgis, qgis, grass, geotools, javascript, html5',
-                    description: '<p>I helped create and managed a team that was responsible for creating an inexpensive automated parallelized machine learning pipeline capable of processing terabytes of data per hour.  The output was automatically generated solar system designs.  Saving over 90%+ of the cost of manually designing systems and vastly increase sales leads.</p><p>Much of the early work was prototyping using weka\'s fiji plugin for image classification, as things became more sophisticated we moved to a headless instance of weka, and by then the full team was assembled and we threw out weka for licensing reasons and wrote our own classifiers on top of sparkml.  These classifiers took more inputs than just imagery including lidar.</p>',
+                    description: '<p>Justified and guided a new team that was responsible for creating an inexpensive automated parallelized machine learning pipeline capable of processing terabytes of data per hour for customer solar systems.  The output was various useful datasets enabling Sungevity to evaluate new markets and produce designs at scale.</p><p>Much of the early work was prototyping using weka\'s fiji plugin for image classification, as things became more sophisticated we moved to a headless instance of weka, and by then the full team was assembled and we threw out weka for licensing reasons and wrote our own classifiers on top of sparkml.  These classifiers took more inputs than just imagery including lidar.</p>',
                     codeExample:'',
                     git:'',
                     download:{},
@@ -139,7 +145,7 @@ export default {
                     summary:'DARPA project to model and simulate large electromechanical system designs like a rocket by parametric optimization.',
                     domain: ['requirements management', 'design space exploration', 'modeling', 'modelica simulation', 'trade space studies', 'parametric optimization', 'verification and certification'],
                     tools: 'javascript, html5, java, postgres, underscore, bootstrap, momentjs',
-                    description: '<p>DARPA had a crowd sourcing competition for a million dollars. I worked with one of the companies provided tooling for the competition, CyDesign Labs.  Eventually they were aquired by ESI. I architected, generally guided best practice for the html5 client, and designed the REST API services.</p><p>For a period of time I also did security auditing up and down the stack pre-deploy.  I discovered and help patch several critical vulnerabilities.</p>',
+                    description: '<p>DARPA had a crowd sourcing competition for a million dollars. I worked with one of the companies provided tooling for the competition, CyDesign Labs.  Eventually they were aquired by ESI. I architected, generally guided best practice for the html5 client, and designed the REST API services.</p><p>I also did security auditing up and down the stack pre-deploy.  I discovered several critical security vulnerabilities.</p>',
                     codeExample:'',
                     git:'',
                     download:{},
@@ -151,7 +157,7 @@ export default {
                     summary:'JavaOne 2009 showcased eReader for JavaFX language developed by request of Simon & Schuster and Sun Microsystems.',
                     domain: ['multi platform', 'mobile', 'desktop', 'tv'],
                     tools: 'javafx, java',
-                    description: '<p>Sun Microsystems partnered with Simon & Schuster to prototype an ebook reader for Java One. It explored the capabilities of the javafx platform and the possibility of publishing media on a device independent platform. I developed this prototype starting two weeks before the conference; that included having to learn the language.  It was created using JavaFX and designed for desktop, mobile, and tv.</p>',
+                    description: '<p>Sun Microsystems partnered with Simon & Schuster to prototype an ebook reader for Java One. It explored the capabilities of the javafx platform and the possibility of publishing media on a device independent platform. It demonstrated publishing media on a device independant platform.  I developed this prototype starting two weeks before the conference including learning the language allowing them to fulfill previously created commitments.  It was created using JavaFX and designed for desktop, mobile, and tv.</p>',
                     codeExample:'',
                     git:'',
                     download:{},
@@ -189,28 +195,29 @@ export default {
                     tools : 'javafx',
                     description: `<p>One performance problem of javafx was discovered realitivly early on; large scene graphs cause slow startups.  And javafx tends to have most nodes in the scene pre-defined at instantiation.  A solution was to defer object creation and place it in a separate process so your UI could launch quickly.</p><p>The main file demonstrates how you can instantiate over 62000 nodes but still have quick rendering of the application. It adds a custom SceneBuilder and SceneWorker object to acheive this. There is also a preliminary version of a modal dialog.</p><p>Once I started creating large scene graphs in javafx I needed an easier way to manage scene graph instantiation. This is because large scene graphs can cause the program to appear to be unresponsive at startup. This generally occurs when the scene definition is all in one statement. The solution is to instantiate parts of the scene graph at a time. This requires breaking the definition up into different blocks and defering the creation of the next block until the previous block and it\'s peer objects have been rendered. There is no built in mechanism do this.</p>`,
                     codeExample:`<p>SceneBuilder relies on recursively calling FX.deferAction() to instantiate groups of Nodes. Groups of nodes are wrapped in SceneWorkers and they are added to the SceneBuilder. The SceneWorker objects have an init function and a target to insert the nodes into. You can either have SceneBuilder append groups of nodes or you can specify a target container.</p><div class="code"><pre>
-        Stage{
-            scene = Scene{
-                content: [ visuals ]
+Stage{
+    scene = Scene{
+        content: [ visuals ]
+    }
+}
+
+SceneBuilder{
+    scene: scene
+    nodes: [
+        SceneWorker{
+            init: function(){
+                [ \/*nodes for item 1*\/ ]
+            }
+        },
+        SceneWorker{
+            init: function(){
+                [ \/*nodes for item 2*\/ ]
             }
         }
-
-        SceneBuilder{
-            scene: scene
-            nodes: [
-                SceneWorker{
-                    init: function(){
-                        [ \/*nodes for item 1*\/ ]
-                    }
-                },
-                SceneWorker{
-                    init: function(){
-                        [ \/*nodes for item 2*\/ ]
-                    }
-                }
-            ]
-        }.start();
-        </div></span><p><span class="code">javafx -cp SceneBuilder.jar scenebuilder.Main</span></p><p><span class="code">java -jar SceneBuilder.jar</span>(alternate if javafx is on your classpath)</p>`,
+    ]
+}.start();
+                    </div></span><br/><p>To run:
+                    <span class="code">javafx -cp SceneBuilder.jar scenebuilder.Main</span></p><p>Alternate if javafx is on your classpath:<span class="code">java -jar SceneBuilder.jar</span></p>`,
                     git:'',
                     download:{},
                     show: false
@@ -273,6 +280,9 @@ export default {
 
     },
     methods:{
+        print: function(){
+            window.print();
+        }
     }
 }
 

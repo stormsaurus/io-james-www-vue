@@ -102,33 +102,51 @@
 div.equation { font-weight:bold; text-align: center; }
 .equation p.caption { float: right; }
 span.equation { font-weight:bold; }
-
+.code { display: block; background-color: #616161; padding: 6px; }
 /* Overrides for printing.  Veu by default looks rather poor when printed. */
 
 @media print {
-    aside, nav, .noprint, footer { display: none; }
+    /* This is not an exhaustive set of elements that need to be styled for printing. */
+    aside, nav { display: none; }
     footer { display: none !important; }
+    body * { color: black !important; background-color: white; }  /* List of items you do not want to automatically color adjust. */
     h1, h2, h3, h4, h5, h6 {
-        color: black;
+        page-break-inside: avoid;
         page-break-after: avoid;
-    }
-    div, p, span {
-        color: black;
-    }
-    .layout {
-        box-shadow: unset !important;
-        -webkit-box-shadow: unset !important;
     }
     main {
         padding: 0 !important;
     }
+    /* Veutify specific classes.  WARNING these can easily change on future versions of Veutify.*/
+    .layout, .card, .card__content {
+        box-shadow: unset !important;
+        -webkit-box-shadow: unset !important;
+        border-radius: unset;
+    }
+    .carousel__left, .carousel__right, .carousel__controls {
+        display: none;
+    }
+    .grey--text{ color: black !important; }
+    .chip--outline{ border-color: black !important; }
+
+
+    /* body * does not apply to some pseudo classes. */
     a:link          { color: black !important; text-decoration:none; }
     a:visited       { color: black !important; text-decoration:none; }
     a:hover         { color: black !important; text-decoration:none; }
     a:active        { color: black !important; text-decoration:none; }
+
+    /* Utility Classes */
     .print-together {
         page-break-inside: avoid;
     }
+    .print-no { display: none !important; }
+    .print-break-after { page-break-after: always !important; }
+
+}
+
+@media screen {
+    .screen-no{ display: none !important }
 }
 
 </style>
