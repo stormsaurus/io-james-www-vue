@@ -1,6 +1,6 @@
 <template>
     <div class="resume">
-        <v-btn class="noprint blue darken-3" fab absolute right @click="print()">
+        <v-btn class="print-no blue darken-3" fab absolute right @click="print()">
             <v-icon>print</v-icon>
         </v-btn>
         <v-container grid-list-md>
@@ -10,7 +10,7 @@
         			Santa Clara, CA<br />
         			U.S. citizen<br />
                     contact@james.io</div>
-                    <div class="noprint pt-2">
+                    <div class="print-no pt-2">
                         <v-tooltip bottom>
                             <v-btn slot="activator" href="mailto:contact@james.io" fab dark small color="primary">
                                 <v-icon dark>mail</v-icon>
@@ -53,7 +53,7 @@
                     <h3>Technical</h3>
                     <p>I started in science and then became fascinated with computer technologies.  Most of my technical computer experience is full stack with a heavy amount of java and javascript.  Various endevours have added experience in machine learning, medical devices/diagnostics, shipping management, geospatial analysis, electromechanical simulations, audio and video streaming, and writing world class APIs.</p><p>Currently I am looking into new languages again like go, exploring improvements in javascript typescript and es6, and digging deeper into machine learning.</p>
                     <v-layout row wrap class="mb-0 pl-3 print-together">
-                        <v-flex class="noprint" xs12><v-divider></v-divider></v-flex>
+                        <v-flex class="print-no" xs12><v-divider></v-divider></v-flex>
                         <v-flex xs6>
                             <h4>Recent</h4>
                         </v-flex>
@@ -65,7 +65,7 @@
                         </v-flex>
                     </v-layout>
                     <v-layout row wrap class="mb-0 pl-3 print-together">
-                        <v-flex class="noprint" xs12><v-divider></v-divider></v-flex>
+                        <v-flex class="print-no" xs12><v-divider></v-divider></v-flex>
                         <v-flex xs6>
                             <h4>Machine Learning</h4>
                         </v-flex>
@@ -77,7 +77,7 @@
                         </v-flex>
                     </v-layout>
                     <v-layout row wrap class="mb-0 pl-3 print-together">
-                        <v-flex class="noprint" xs12><v-divider></v-divider></v-flex>
+                        <v-flex class="print-no" xs12><v-divider></v-divider></v-flex>
                         <v-flex xs6>
                             <h4>Web</h4>
                         </v-flex>
@@ -89,7 +89,7 @@
                         </v-flex>
                     </v-layout>
                     <v-layout row wrap class="mb-0 pl-3 print-together">
-                        <v-flex class="noprint" xs12><v-divider></v-divider></v-flex>
+                        <v-flex class="print-no" xs12><v-divider></v-divider></v-flex>
                         <v-flex xs6>
                             <h4>Mobile</h4>
                         </v-flex>
@@ -101,7 +101,7 @@
                         </v-flex>
                     </v-layout>
                     <v-layout row wrap class="mb-0 pl-3 print-together">
-                        <v-flex class="noprint" xs12><v-divider></v-divider></v-flex>
+                        <v-flex class="print-no" xs12><v-divider></v-divider></v-flex>
                         <v-flex xs6>
                             <h4>Geospatial</h4>
                         </v-flex>
@@ -113,14 +113,14 @@
                         </v-flex>
                     </v-layout>
                     <v-layout row wrap class="mb-0 pl-3 print-together">
-                        <v-flex class="noprint" xs12><v-divider></v-divider></v-flex>
+                        <v-flex class="print-no" xs12><v-divider></v-divider></v-flex>
                         <v-flex xs12><h4>General Tools</h4></v-flex>
                         <v-flex xs12>
                             <p>atom, aws including ec2, rds, s3, iam, jenkins, git, gitkraken, mysql, npm, postgresql, travis-ci</p>
                         </v-flex>
                     </v-layout>
                     <v-layout row wrap class="mb-0 pl-3 print-together">
-                        <v-flex class="noprint" xs12><v-divider></v-divider></v-flex>
+                        <v-flex class="print-no" xs12><v-divider></v-divider></v-flex>
                         <v-flex xs12><h4>Dusty</h4></v-flex>
                         <v-flex xs12>
                             <p>Languages - c/c++, bash, fortran, javafx, lua, perl, php, tcl/tk</p><p>Tools - apache httpd, ant, audio/visual hardware encoders, bower, docker, eclipse as a platform, hibernate, iptables/ipchains, jetty, jnlp, jwplayer, kubernetes, maven, mercurial, mod_rewrite, mod_proxy, mod_ssl, nginx, spring, svn, tomcat, virtual hosting, weblogic </p><p>Other - D3, backbone, jquery, jquery ui, qunit, geronimo, pubsubjs, jpa via openjpa, openjpa, rmtp, smil, junit, testng, jabsorb, video/audio transcoding</p>
@@ -138,8 +138,8 @@
                             <div class="mb-1">Sungevity, Inc. &nbsp;&nbsp;&nbsp; Jun 2014 – Jun 2016</div>
                         </v-flex>
                         <v-flex xs12>
-                            <p>Created and managed a team that was responsible for creating an inexpensive automated parallelized machine learning pipeline capable of processing terabytes of data per hour for customer solar systems.  The output was various needed datasets enabling Sungevity to move into new markets and produce designs at scale.  Was personally responsible for many of the core innovations.</p>
-                            <p>Accomplishments: Enabled moving from human created solar system designs to machine learning created solar system designs with a cost reduction of 90%+ and vastly increasing potential sales leads.</p>
+                            <p>Justified and guided a new team that was responsible for creating an inexpensive automated parallelized machine learning pipeline capable of processing terabytes of data per hour for Sungevity and their customers.  Inputs included satellite imagery, aerial imagery, lidar, and others.  The outputs were various datasets enabling Sungevity to evaluate new markets and scale.</p>
+                            <p>Accomplishments: Enabled moving from human created to machine learning created datasets and increasing potential sales leads at vastly less cost.</p>
                         </v-flex>
 <!--
                         <v-flex xs12 mb-0 pb-0>

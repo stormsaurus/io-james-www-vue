@@ -109,7 +109,7 @@ span.equation { font-weight:bold; }
     /* This is not an exhaustive set of elements that need to be styled for printing. */
     aside, nav { display: none; }
     footer { display: none !important; }
-    body * { color: black !important; background-color: white; }  /* List of items you do not want to automatically color adjust. */
+    body * { color: black !important; background-color: white; }
     h1, h2, h3, h4, h5, h6 {
         page-break-inside: avoid;
         page-break-after: avoid;
@@ -117,7 +117,8 @@ span.equation { font-weight:bold; }
     main {
         padding: 0 !important;
     }
-    /* Veutify specific classes.  WARNING these can easily change on future versions of Veutify.*/
+
+    /* Vuetify specific classes.  WARNING these can easily change on future versions of Vuetify.*/
     .layout, .card, .card__content {
         box-shadow: unset !important;
         -webkit-box-shadow: unset !important;
@@ -130,7 +131,7 @@ span.equation { font-weight:bold; }
     .chip--outline{ border-color: black !important; }
 
 
-    /* body * does not apply to some pseudo classes. */
+    /* Change pseudo classes since body * does not apply to some pseudo classes. */
     a:link          { color: black !important; text-decoration:none; }
     a:visited       { color: black !important; text-decoration:none; }
     a:hover         { color: black !important; text-decoration:none; }
@@ -140,7 +141,7 @@ span.equation { font-weight:bold; }
     .print-together {
         page-break-inside: avoid;
     }
-    .print-no { display: none !important; }
+    .print-no { display: none !important; }     /* Use .print-no to hide buttons. */
     .print-break-after { page-break-after: always !important; }
 
 }
@@ -148,5 +149,6 @@ span.equation { font-weight:bold; }
 @media screen {
     .screen-no{ display: none !important }
 }
+
 
 </style>
