@@ -40,6 +40,12 @@
             </v-layout>
             <v-layout row wrap class="mb-1 pl-2 pt-1" elevation-3>
                 <v-flex xs12>
+                    <p>The type of role I am most interested is working with a great group of people on a compelling and interesting project.  While important, the particular tech stack or position is not the most relavent thing to me.  I can get up to speed on most stacks and have performed in many roles as needed.  Domains I am excited about amoung others are; machine learning and crytocurrency fintech.</p>
+                </v-flex>
+            </v-layout>
+
+            <v-layout row wrap class="mb-1 pl-2 pt-1" elevation-3>
+                <v-flex xs12>
     				<h3>Innovation</h3>
                     <p>Have founded/co-founded a couple startups.  Experienced in wearing many hats including conception, hiring, and execution.</p>
     				<h3>Leadership</h3>
@@ -131,7 +137,7 @@
             <v-layout row wrap class="mb-1 pl-2 pt-1" elevation-3>
                 <v-flex xs12>
     				<h3>Experience</h3>
-                    <p>This is a selected and incomplete history of prior work to cut down on resume length.  Additional details and projects can be found at <a href="/#/projects">http://james.io/#/projects</a> and <a href="https://www.linkedin.com/in/jteer">https://www.linkedin.com/in/jteer</a> .</p>
+                    <p>Selected below; additional experience at <a href="/#/projects">http://james.io/#/projects</a> and <a href="https://www.linkedin.com/in/jteer">https://www.linkedin.com/in/jteer</a> .</p>
                     <v-layout row wrap class="mb-1 pl-3">
                         <v-flex xs12 mb-0 pb-0>
                             <h4>Machine Learning Engineer</h4>
@@ -247,7 +253,7 @@
                         </v-list-tile>
                         <v-list-tile>
                             <v-list-tile-content>
-                                <div>un Programme d'Étude du Travail (work study)</div>
+                                <div>Un Programme d'Étude du Travail (work study)</div>
                                 <div class="ml-5"><a href="https://en.wikipedia.org/wiki/Rh%C3%B4ne-Poulenc">Rhône Poulenc</a>, France</div>
                                 <div class="ml-5">Summer, 1990</div>
                             </v-list-tile-content>
@@ -287,7 +293,9 @@ export default {
 </script>
 
 <style scoped>
-    .restoregrey { background-color: #313131 !important; }
+    @media screen{
+        .restoregrey { background-color: #313131 !important; }
+    }
     h3 { margin-bottom: 1em; }
     h4 { display:inline; }
     p { margin-left: 1.5em; }

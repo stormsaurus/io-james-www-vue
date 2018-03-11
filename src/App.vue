@@ -143,6 +143,7 @@ span.equation { font-weight:bold; }
     }
     .print-no { display: none !important; }     /* Use .print-no to hide buttons. */
     .print-break-after { page-break-after: always !important; }
+    .print-break-before { page-break-before: always !important; }
 
 }
 
