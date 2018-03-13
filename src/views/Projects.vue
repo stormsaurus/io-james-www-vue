@@ -101,7 +101,7 @@
 
 <style>
     .clickableCard:hover { box-shadow: 2px 2px 8px 4px #131313; }
-    .carousel__item { background-size: contain;}
+    .carousel__item { background-size: contain !important;}
 </style>
 
 <script>

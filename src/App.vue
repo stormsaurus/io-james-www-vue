@@ -122,10 +122,10 @@ span.equation { font-weight:bold; }
     .layout, .card, .card__content {
         box-shadow: unset !important;
         -webkit-box-shadow: unset !important;
-        border-radius: unset;
+        border-radius: unset !important;
     }
     .carousel__left, .carousel__right, .carousel__controls {
-        display: none;
+        display: none !important;
     }
     .grey--text{ color: black !important; }
     .chip--outline{ border-color: black !important; }
