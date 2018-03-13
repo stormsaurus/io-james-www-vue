@@ -236,7 +236,7 @@ SceneBuilder{
                 },
                 {id: 'imageprocessor',
                     title: 'Image Processor',
-                    images: ['img/image_processor/image001-300px.jpg','img/image_processor/image002-300px.jpg','img/image_processor/image003-300px.jpg','img/image_processor/image004-300px.jpg'],
+                    images: ['img/image_processor/image001-300px-cropped.jpg','img/image_processor/compare_j1_set1_25.gif','img/image_processor/image002-300px.jpg','img/image_processor/compare_f2_edges25v.gif','img/image_processor/image003-300px.jpg','img/image_processor/compare_j1_edges25.gif','img/image_processor/image004-300px.jpg','img/image_processor/compare_f2_quant25.7col.gif'],
                     summary:'Image and signal processor including a specialized implementation of the Legendre-Fenchel transform.',
                     domain: ['image transforms', 'scientific computing'],
                     tools: 'java, fortran',
