@@ -13,3 +13,5 @@ Its relatively simplicity makes it a good candidate to periodically rewrite/upda
 It exercises several components of the vue framework such as grids/flex layout, cards, carousels, chips, etc.
 
 It's not licensed for privacy reasons but is available to view as a demonstration of work.
+
+More details [here](http://james.io/#/projects) .
