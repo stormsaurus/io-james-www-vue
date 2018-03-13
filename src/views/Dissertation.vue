@@ -1083,7 +1083,7 @@
 
 						<p>The Edge-Find routine returns a diffused image with enhancement at the edges.  Optionally, this routine can display the resultant diffused image and/or an image of the edge magnitude detected at each pixel, <a href="#figIX-2">Figure IX-2</a>.  Generally, a user would display only the diffused image to be used by an additional processing routine like Color-Quantization. It is useful to display the diffused image and the edge image to determine how effective the choices of parameters are.</p>
 
-						<p>The Color-Quantization routine returns a quantized image with a number of �colors� or gray values set by a parameter.  The colors are chosen by determining the values of the peaks in the histogram.  Each pixel is remapped to the closest chosen values.</p>
+						<p>The Color-Quantization routine returns a quantized image with a number of 'colors' or gray values set by a parameter.  The colors are chosen by determining the values of the peaks in the histogram.  Each pixel is remapped to the closest chosen values.</p>
 					</div>
 					<div id="IPmultiStepProcessingRoutineDescriptions" class="section">
 						<h3>Multi-Step Processing Routine Descriptions</h3>
@@ -1218,6 +1218,9 @@
 </template>
 
 <style scoped>
+
+/* override veutify style */
+.table { background-color: unset !important; }
 
 .dissertation li { margin-left: 1.5em; margin-right: 1.5em; }
 

@@ -107,7 +107,7 @@ span.equation { font-weight:bold; }
 
 @media print {
     /* This is not an exhaustive set of elements that need to be styled for printing. */
-    aside, nav { display: none; }
+    aside, nav { display: none !important; }
     footer { display: none !important; }
     body * { color: black !important; background-color: white; }
     h1, h2, h3, h4, h5, h6 {

@@ -240,9 +240,9 @@ SceneBuilder{
                     summary:'Image and signal processor including a specialized implementation of the Legendre-Fenchel transform.',
                     domain: ['image transforms', 'scientific computing'],
                     tools: 'java, fortran',
-                    description: '<p>This is one of my first useful but quite dated Java program prior to professionally coding.  It was developed to support research into two dimensional monolayer domain growth. It\'s a port of several routines previously written by a collaborator in Fortran with some new functions and a UI put on top and batch processing added.</p><p>Sadly the source to this implementation was lost in time.  However the jar file survived if you want to experiement.</p>',
+                    description: '<p>This is one of my first useful but quite dated Java program prior to professionally coding.  It was developed to support research into two dimensional monolayer domain growth. It\'s a port of several routines previously written by a collaborator in Fortran with some new functions and a UI put on top and batch processing added.</p><p>More details <a href="/#/dissertation">here</a></p>',
                     codeExample:'<p><span class="code">java -jar IP_3_0_2a.jar</span></p>',
-                    git:'',
+                    git:'https://github.com/stormsaurus/ip',
                     download:{name:'IP_3_0_2a.jar', href:'files/IP_3_0_2a.jar'},
                     show: false
                 },
@@ -254,7 +254,7 @@ SceneBuilder{
                     tools: 'java, jabsorb, apache commons, jpa via openjpa, pirc, apache tomcat, mysql, jnlp launcher',
                     description: `<p>For fun I wrote a partial program for communicating with people while not logged into a game provided they also had the program. The idea is to parse chat logs and relay it to an IRC or SMS server. An IRC bot would sit in the channel and relay back to a network of game clients through a mod. Duplicate messages and unauthorized traffic would be filtered on the server. This two way communication would let you participate in chat from outside the game from protocols and devices like IRC, IM, email, SMS, even your cell phone.</p><p>Can be used for other log file operations such of combat stats, player locations, and interclient communication if custom channels can be created.</p><p>This required an in game mod, a local JNLP swing client for parsing called the Watcher, a server for sending and receiving the messages called Carousel, as well a specialized IRC bot. Unfortunately the most easily modded game at the time (World of Warcraft) is designed such that real time logging would violating the EULA. I wanted real time chat.  The are other potential uses, for example it could just as easily parse combat logs.</p><p>The local jnlp application. Launchs from a web page and normally sits in the system tray.</p><p>Project has been retired.</p>`,
                     codeExample:'',
-                    git:'',
+                    git:'https://github.com/stormsaurus/catalyst',
                     download:{},
                     show: false
                 }
