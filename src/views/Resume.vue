@@ -40,7 +40,7 @@
             </v-layout>
             <v-layout row wrap class="mb-1 pl-2 pt-1" elevation-3>
                 <v-flex xs12>
-                    <p>The type of role I am most interested is working with a great group of people on a compelling and interesting project.  While important, the particular tech stack or position is not the most relavent thing to me.  I can get up to speed on most stacks and have performed in many roles as needed.  Domains I am excited about amoung others are; machine learning and crytocurrency fintech.</p>
+                    <p>The type of role I am most interested is working with a great group of people on a compelling and interesting project.  While important, the particular tech stack or position is not the most relavent thing to me.  I can get up to speed on most stacks and have performed in many roles as needed.  Domains I am excited about among others are; machine learning and crytocurrency fintech.</p>
                 </v-flex>
             </v-layout>
 
@@ -67,7 +67,7 @@
                             <v-chip small outline>days</v-chip>
                         </v-flex>
                         <v-flex xs12>
-                            <p>go, vue, veutify</p>
+                            <p>new machine learning algorithms, go, vue, veutify</p>
                         </v-flex>
                     </v-layout>
                     <v-layout row wrap class="mb-0 pl-3 print-together">
@@ -79,7 +79,7 @@
                             <v-chip small outline>2 years</v-chip>
                         </v-flex>
                         <v-flex xs12>
-                            <p>supervised learning classification, cloudcompare, fast marching, random forest, fiji, imagej, java, kd trees, linear regression, logistic regression, mathematica (limited), numpy, octave (limited), python, scipy, sparkml (limited), weka</p>
+                            <p>cloudcompare, fast random forest, fiji, imagej, java, k-means clustering, linear regression, logistic regression, numpy, python, sparkml (limited), supervised decision trees, weka</p>
                         </v-flex>
                     </v-layout>
                     <v-layout row wrap class="mb-0 pl-3 print-together">
