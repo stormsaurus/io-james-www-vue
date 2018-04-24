@@ -129,7 +129,8 @@ span.equation { font-weight:bold; }
     }
     .grey--text{ color: black !important; }
     .chip--outline{ border-color: black !important; }
-
+    .list{ background: unset !important; }
+    .elevation-3 { box-shadow: unset !important; }
 
     /* Change pseudo classes since body * does not apply to some pseudo classes. */
     a:link          { color: black !important; text-decoration:none; }

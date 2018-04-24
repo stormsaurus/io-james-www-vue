@@ -10,6 +10,7 @@
         			Santa Clara, CA<br />
         			U.S. citizen<br />
                     contact@james.io</div>
+                    <div class="screen-no">http://james.io/  <v-icon dark>code</v-icon><v-icon dark>link</v-icon></div>
                     <div class="print-no pt-2">
                         <v-tooltip bottom>
                             <v-btn slot="activator" href="mailto:contact@james.io" fab dark small color="primary">
@@ -40,10 +41,9 @@
             </v-layout>
             <v-layout row wrap class="mb-1 pl-2 pt-1" elevation-3>
                 <v-flex xs12>
-                    <p>The type of role I am most interested is working with a great group of people on a compelling and interesting project.  While important, the particular tech stack or position is not the most relavent thing to me.  I can get up to speed on most stacks and have performed in many roles as needed.  Domains I am excited about among others are; machine learning and crytocurrency fintech.</p>
+                    <p>I am primarily interested in working with a great group of people on compelling and interesting projects.  The particular tech stack or position, while relevant, is not the most important thing to me.  I can get up to speed on most stacks and have performed as needed in many roles.  Recently I have been digging deeper into machine learning and crytocurrency fintech.</p>
                 </v-flex>
             </v-layout>
-
             <v-layout row wrap class="mb-1 pl-2 pt-1" elevation-3>
                 <v-flex xs12>
     				<h3>Innovation</h3>
@@ -272,6 +272,12 @@
                         <div>Journal of Physical Chemistry</div>
                         <div>Journal of Chemical Physics</div>
                     </ul>
+                </v-flex>
+            </v-layout>
+            <v-layout row wrap class="mb-0 pl-2 pt-1 screen-no" elevation-3>
+                <v-flex xs12>
+                    <h3>Other</h3>
+                    <p class="screen-no">For social media, projects, and github sites see my personal website at <a href="http://james.io/">http://james.io/</a></p>
                 </v-flex>
             </v-layout>
         </v-container>
