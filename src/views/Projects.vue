@@ -119,7 +119,7 @@ export default {
                             'img/solarstudio/classified-sparse-300px.jpg',
                             'img/solarstudio/classified-dense-300px.jpg'],
                     summary:'Machine learning to support solar systems at city scale.',
-                    domain: ['machine learning', 'terabyte datasets', 'geospatial', 'lidar', 'image analysis', '3d modeling'],
+                    domain: ['machine learning', 'sparkml', 'terabyte datasets', 'geospatial', 'lidar', 'image analysis', '3d modeling'],
                     tools: 'sparkml, fiji, imagej, weka, scipy, numpy, threejs, cloudcompare, fugroviewer, lastools, arcgis, qgis, grass, geotools, javascript, html5',
                     description: '<p>Justified and guided a new team that was responsible for creating an inexpensive automated parallelized machine learning pipeline capable of processing terabytes of data per hour for Sungevity and their customers.  Inputs included satellite imagery, aerial imagery, lidar, and others.  The outputs were various datasets enabling Sungevity to evaluate new markets and scale.</p><p>Much of the early work was prototyping using weka\'s fiji plugin for image classification, as things became more sophisticated we moved to a headless instance of weka, and by then the full team was assembled and we threw out weka for licensing reasons and wrote our own classifiers on top of sparkml.</p>',
                     codeExample:'',
@@ -264,7 +264,7 @@ SceneBuilder{
                 title: 'Miscellaneous',
                 images: ['img/utilities/wg-encrypt-screenshot-300px.jpg'],
                 summary:'Collection of miscellaneous utilities.',
-                domain: ['libraries', 'utilities', 'Java', 'Batch Files', 'Vue'],
+                domain: ['libraries', 'utilities', 'java', 'vue'],
                 description: ``,
                 items: [
                     {

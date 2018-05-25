@@ -79,7 +79,7 @@
                             <v-chip small outline>2 years</v-chip>
                         </v-flex>
                         <v-flex xs12>
-                            <p>cloudcompare, fast random forest, fiji, imagej, java, k-means clustering, linear regression, logistic regression, numpy, python, sparkml (limited), supervised decision trees, weka</p>
+                            <p>cloudcompare, fast random forest, fiji, imagej, java, k-means clustering, linear regression, logistic regression, numpy, python, supervised decision trees, weka</p>
                         </v-flex>
                     </v-layout>
                     <v-layout row wrap class="mb-0 pl-3 print-together">
@@ -91,7 +91,7 @@
                             <v-chip small outline>10+ years</v-chip>
                         </v-flex>
                         <v-flex xs12>
-                            <p>angular, bootstrap, css, es6, html, html5, ionic, javascript, java, jasmine, karma, modernizr, momentjs, npm, rxjs, typescript, threejs, underscore, and others</p>
+                            <p>angular, bootstrap, css, html5, ionic, javascript, java, jasmine, karma, modernizr, momentjs, npm, rxjs, typescript, threejs, and others</p>
                         </v-flex>
                     </v-layout>
                     <v-layout row wrap class="mb-0 pl-3 print-together">
@@ -103,7 +103,7 @@
                             <v-chip small outline>1 year</v-chip>
                         </v-flex>
                         <v-flex xs12>
-                            <p>hybrid apps using cordova, html/html5, ionic, typescript</p>
+                            <p>hybrid apps using cordova, html5, ionic, typescript</p>
                         </v-flex>
                     </v-layout>
                     <v-layout row wrap class="mb-0 pl-3 print-together">
@@ -129,15 +129,15 @@
                         <v-flex class="print-no" xs12><v-divider></v-divider></v-flex>
                         <v-flex xs12><h4>Dusty</h4></v-flex>
                         <v-flex xs12>
-                            <p>Languages - c/c++, bash, fortran, javafx, lua, perl, php, tcl/tk</p><p>Tools - apache httpd, ant, audio/visual hardware encoders, bower, docker, eclipse as a platform, hibernate, iptables/ipchains, jetty, jnlp, jwplayer, kubernetes, maven, mercurial, mod_rewrite, mod_proxy, mod_ssl, nginx, spring, svn, tomcat, virtual hosting, weblogic </p><p>Other - D3, backbone, jquery, jquery ui, qunit, geronimo, pubsubjs, jpa via openjpa, openjpa, rmtp, smil, junit, testng, jabsorb, video/audio transcoding</p>
+                            <p>Languages - c/c++, bash, fortran, javafx, lua, perl, php, tcl/tk</p><p>Tools - apache httpd, ant, audio/visual hardware encoders, bower, docker, eclipse as a platform, hibernate, iptables/ipchains, jetty, jnlp, jwplayer, kubernetes, maven, mercurial, mod_rewrite, mod_proxy, mod_ssl, nginx, spring, svn, tomcat, virtual hosting, weblogic </p><p>Other - D3, backbone, jquery, jquery ui, qunit, geronimo, pubsubjs, jpa via openjpa, openjpa, rmtp, smil, junit, testng, underscore, jabsorb, video/audio transcoding</p>
                         </v-flex>
                     </v-layout>
                 </v-flex>
             </v-layout>
             <v-layout row wrap class="mb-1 pl-2 pt-1" elevation-3>
                 <v-flex xs12>
-    				<h3>Experience</h3>
-                    <p>Selected below; additional experience at <a href="/#/projects">http://james.io/#/projects</a> and <a href="https://www.linkedin.com/in/jteer">https://www.linkedin.com/in/jteer</a> .</p>
+    				<h3>Experience - Selected</h3>
+                    <p>Additional experience at <a href="/#/projects">http://james.io/#/projects</a> and <a href="https://www.linkedin.com/in/jteer">https://www.linkedin.com/in/jteer</a> .</p>
                     <v-layout row wrap class="mb-1 pl-3">
                         <v-flex xs12 mb-0 pb-0>
                             <h4>Machine Learning Engineer</h4>
