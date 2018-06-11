@@ -79,7 +79,7 @@
                             <v-chip small outline>2 years</v-chip>
                         </v-flex>
                         <v-flex xs12>
-                            <p>cloudcompare, fast random forest, fiji, imagej, java, k-means clustering, linear regression, logistic regression, numpy, python, supervised decision trees, weka</p>
+                            <p>cloudcompare, fast random forest, fiji, imagej, java, k-means clustering, linear regression, logistic regression, numpy, python, sparkml (limited), supervised decision trees, weka</p>
                         </v-flex>
                     </v-layout>
                     <v-layout row wrap class="mb-0 pl-3 print-together">
@@ -144,7 +144,7 @@
                             <div class="mb-1">Sungevity, Inc. &nbsp;&nbsp;&nbsp; Jun 2014 – Jun 2016</div>
                         </v-flex>
                         <v-flex xs12>
-                            <p>Justified and guided a new team that was responsible for creating an inexpensive automated parallelized machine learning pipeline capable of processing terabytes of data per hour for Sungevity and their customers.  Inputs included satellite imagery, aerial imagery, lidar, and others.  The outputs were various datasets enabling Sungevity to evaluate new markets and scale.</p>
+                            <p>Justified and guided a new team that was responsible for creating an inexpensive automated parallelized machine learning pipeline capable of processing terabytes of data per hour for Sungevity and their customers on SparkML.  Inputs included satellite imagery, aerial imagery, lidar, and others.  The outputs were various datasets enabling Sungevity to evaluate new markets and scale.</p>
                             <p>Accomplishments: Enabled moving from human created to machine learning created datasets and increasing potential sales leads at vastly less cost.</p>
                         </v-flex>
 <!--
